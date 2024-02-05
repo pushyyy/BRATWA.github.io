@@ -1,0 +1,101 @@
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>B R A T W A</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  
+  <link href="favicon.ico" rel="icon" type="image/ico"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href="css/animate.css" rel="stylesheet"/>
+  <link href="css/YTPlayer.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="js/title.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/marquee.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script><script src="inc/jquery.mb.YTPlayer.js"></script>
+</head>
+<body>
+  <div class="center">
+    <center>
+      <h1 style="font-size: 3rem;">B L O O D  I N & O U T</h1>
+      <h2 id="time">00:00:00</h2>
+      <h3 id="day">Monday</h3>
+      <h3 id="date">Febuary 5, 2024</h3>
+    </center>
+
+
+    <center class="animated fadeInLeft">
+      <img src="x.png" style="width: 10rem;" draggable="false">
+      <br><br>
+      <div style="max-width: 75rem; font-size: 1.25rem;" onclick="home()">
+        <h5>
+            | BLOOD IN |
+        </h5>
+        <h5>
+            Eine Chance in die Familie bekommt man nur wenn man sich eine gewisse Zeit auf dem Anwesen aufgehalten hat. 
+            Sollten die Familien ältesten überzeugt sein bekommt man einen Angebot sich vor der Familie vorzustellen dabei muss der Vorsteller einige Dinge über die Bratwa bereits wissen z.B. 
+            Was die Sterne auf den Knien bedeuten oder was eine Krysha und deren Funktion ist. 
+            Zudem muss er noch wissen wer überhaupt die Familie Ältesten sind aber wir wollen ja nicht das er nur Dinge von uns weiß! Natürlich muss er auch einiges von sich erzählen, 
+            wer er überhaupt ist was er bis jetzt getan hat und ob er eine Familie hat und noch vieles mehr. Sollten alle Mitglieder der Bratwa überzeugt sein so muss er unser Ritual durchleben… 
+            Es wird in dem Ring einen Boxkampf geben zwischen dem Vorsteller und demjenigen der zuletzt der Familie beigetreten ist sollte er diesen Boxkampf gewinnen 
+            so hat er sich den beitritt in die Familie verdient und muss dem Krestniy mit seinem Blut die ewige Treue schwören. Doch sollte er diesen Kampf verlieren, 
+            muss er erstmal eine Geldsumme für den Beitritt in die Familie zahlen.
+        </h5>
+        <h5>
+            Aber unsere Leaderschaft haben wir mit bedacht ausgewählt und auch einen strengen augenmerkmal darauf gelegt, dass es kein einmaliges Ding wird unser Ziel ist,
+            es diese Familie solange wie möglich auf den Beinen zu halten, was auch der fall sein wird und das können wir euch mit voller überzeugen sagen, 
+            da wir keine Leute haben, die keine Ahnung haben von dem was sie repräsentieren.
+        </h5>
+        <h5>
+            | BLOOD OUT |
+        </h5>
+        <h5>
+            Solltest du der Familie schaden, dich nicht an die Gesetze der Familie halten oder mit sonstigen dinge der Bratwa gefährden können, darfst du dich auf ein Blutiges Ende gefasst machen.
+        </h5>
+        <h5>
+            Die Familien Ältesten werden Intern über dich abstimmen ob du der Familie weiterhin gut tust, sollte dies nicht der Fall sein, 
+            wirst du vom Krysha (Rang 06) aufgesucht und entführt. Sobald du nur noch Schwarz vor deinen Augen sehen wirst, 
+            kannst du damit rechnen das dieser Weg nicht mehr lange gehen wird… Bei der Ankunft wirst du auf dem Friedhof an deinem Bereits geschaufeltem Grab vor den Familien Ältesten stehen, 
+            wobei du mit den Worten “Man sieht sich in der Hölle” verabschiedet wirst
+        </h5>
+      </div>
+
+    </center>
+  </div>
+
+  <script>
+    setInterval(function() {
+      const date = new Date();
+      document.getElementById('time').innerText = date.toLocaleTimeString();
+      document.getElementById('day').innerText = date.toLocaleDateString('en-US', { weekday: 'long' });
+      document.getElementById('date').innerText = date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    }, 1000);
+
+    document.onkeydown = function(e) {
+      if(e.keyCode == 123) {
+        return false;
+      }
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+        return false;
+      }
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+        return false;
+      }
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+        return false;
+      }
+      if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+        return false;
+      }
+    }
+
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+    function home() {
+      window.location.replace("index.html");
+    }
+  </script>
+</body>
+</html>

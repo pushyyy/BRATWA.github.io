@@ -1,0 +1,95 @@
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>B R A T W A</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  
+  <link href="favicon.ico" rel="icon" type="image/ico"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href="css/animate.css" rel="stylesheet"/>
+  <link href="css/YTPlayer.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="js/title.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/marquee.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script><script src="inc/jquery.mb.YTPlayer.js"></script>
+</head>
+<body>
+  <div class="center">
+    <center>
+      <h1 style="font-size: 3rem;">K L E I D U N G</h1>
+      <h2 id="time">00:00:00</h2>
+      <h3 id="day">Monday</h3>
+      <h3 id="date">Febuary 5, 2024</h3>
+    </center>
+
+
+    <center class="animated fadeInLeft">
+      <img src="x.png" style="width: 10rem;" draggable="false">
+      <br><br>
+      <div style="max-width: 75rem; font-size: 1.25rem;" onclick="home()">
+        <h5>
+          In unserer Gemeinschaft legen wir großen Wert auf Einheit und Identität,
+          und dies spiegelt sich auch in unserer Kleidung wieder.
+          Unsere traditionelle Kleidung zeichnet sich durch ihre markanten Merkmale aus,
+          die nicht nur unsere Zugehörigkeit zur Bratwa betonen, sondern auch unsere gemeinsamen Werte und Prinzipien symbolisieren.        
+        </h5>
+        <h5>
+          Die Kleidung selbst ist von schlichter Eleganz geprägt, wobei dunkle Farben und hochwertige Materialien dominieren.
+          Robuste Stoffe und präzise Verarbeitung spiegeln unsere Standhaftigkeit und Entschlossenheit wieder.
+          Durch geschickt platzierte Stickereien und Verzierungen verleihen wir unserer Kleidung zudem eine kulturelle Tiefe, die unsere Wurzeln und Traditionen hervorhebt.
+        </h5>
+        <h5>
+          Die Bratwa-Kleidung ist nicht nur ein äußeres Kennzeichen, sondern auch Ausdruck unserer inneren Werte.
+          In dieser Kleidung fühlen wir uns nicht nur stark und geschützt,
+          sondern auch verbunden mit unseren Brüdern und Schwestern in der Bratwa.
+          Es ist eine Bekleidung, die nicht nur unseren äußeren Auftritt formt,
+          sondern auch unsere innere Haltung prägt – eine Haltung der Loyalität, des Respekts und der gegenseitigen Unterstützung.
+        </h5>
+        <h5>
+          ----------------------------------------------------------------------------------------------------------------------------------
+          Die Kleidung ist natürlich noch nicht Final wir möchten uns gerne von der Masse abheben. Daher könnte es im Oberteilen Bereich noch zu veränderungen kommen. Diese werden natürlich euch mitgeteilt.
+        </h5>
+        <img  src="https://media.discordapp.net/attachments/1023001288969035907/1204180307499032606/2.png?ex=65d3cb4d&is=65c1564d&hm=4456e68cc97235ed83371326092a5256641e0398236f0d1b28f45436f48d5995&=&format=webp&quality=lossless">
+        <img  src="https://media.discordapp.net/attachments/1023001288969035907/1204180307956342814/1.png?ex=65d3cb4e&is=65c1564e&hm=1cf716681dc6e0fdea57747e25732f551d0185e657b6e3bee88dd1f59b2cc8f4&=&format=webp&quality=lossless">
+      </div>
+
+    </center>
+  </div>
+
+  <script>
+    setInterval(function() {
+      const date = new Date();
+      document.getElementById('time').innerText = date.toLocaleTimeString();
+      document.getElementById('day').innerText = date.toLocaleDateString('en-US', { weekday: 'long' });
+      document.getElementById('date').innerText = date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    }, 1000);
+
+    document.onkeydown = function(e) {
+      if(e.keyCode == 123) {
+        return false;
+      }
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+        return false;
+      }
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+        return false;
+      }
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+        return false;
+      }
+      if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+        return false;
+      }
+    }
+
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+    function home() {
+      window.location.replace("index.html");
+    }
+  </script>
+</body>
+</html>

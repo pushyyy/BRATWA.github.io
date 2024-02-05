@@ -1,0 +1,126 @@
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>B R A T W A</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  
+  <link href="favicon.ico" rel="icon" type="image/ico"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href="css/animate.css" rel="stylesheet"/>
+  <link href="css/YTPlayer.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="js/title.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/marquee.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script><script src="inc/jquery.mb.YTPlayer.js"></script>
+</head>
+<body>
+  <div class="center">
+    <center>
+      <h1 style="font-size: 3rem;">R Ä N G E</h1>
+      <h2 id="time">00:00:00</h2>
+      <h3 id="day">Monday</h3>
+      <h3 id="date">Febuary 5, 2024</h3>
+    </center>
+
+
+    <center class="animated fadeInLeft">
+      <img src="x.png" style="width: 10rem;" draggable="false">
+      <br><br>
+      <div style="max-width: 75rem; font-size: 1.25rem;" onclick="home()">
+        <h5>
+            Krestniy - Rang 12 (Leader)
+            Der Krestniy ist der sogenannte “Gotfather”. Er leitet die Batwa und trifft mit seinen Beratern alle Entscheidungen rund um die Bratwa    
+         </h5>
+         <h5>
+            Sovjetnik - Rang 11 (Leader)
+            Der Sovjetnik ist der Berater und der engste Freund des Krestniy. Er übernimmt die Leitungsfunktion der Bratwa, wenn der Krestniy nicht anwesend oder verletzt ist.
+        </h5>
+        <h5>
+            Kaznachey - Rang 10 (Leader)
+            Der Kaznachey ist der Buchhalter. Er kümmert sich um die Finanzen innerhalb der Bratwa und sammelt das Geld der Brigadieren und Nadzoren ein. Zudem erteilt er ihnen Aufgaben.
+        </h5>
+        <h5>
+            Nadzor - Rang 09 (Co-Leader)
+            Der Nadzor achtet auf die Aktivitäten der Brigadier. Des weiteren übt er Verwaltungsaufgaben bezüglich der Mitglieder aus und ist zuständig für neue Mitglieder.
+        </h5>
+        <h5>
+            Brigadier - Rang 08
+            Der Brigadier ist für eine kleine Anzahl von Mitgliedern verantwortlich. Es gibt zwei Brigadiers in der Bratwa.
+        </h5> 
+        <h5>
+            Bojewik - Rang 07
+            Der Bojewik kann als Soldat verstanden werden, welcher für verschiedene spezielle kriminelle Aktivitäten eingesetzt wird. Zusätzlich besitzt er die Aufgabe, geeignete neue Mitglieder zu finden.
+        </h5> 
+        <h5>  
+            Krysha - Rang 06
+            Die Krysha werden auch als Vollstrecker bezeichnet, da sie meist für Auftragsmorde zuständig sind. Zudem sind sie die Eliteeinheit der Bratwa
+        </h5>
+        <h5>    
+            Byki - Rang 05
+            Byki sind sogenannte Bodygards der Leaderschaft. Alle Mitglieder ab Rang 05 sind für den Schutz der Leaderschaft zuständig
+        </h5>
+        <h5>   
+            Medved - Rang 04
+            Der Bär ist ein Mitglied der zwei Brigaden
+        </h5>
+        <h5>
+            Orel - Rang 03
+            Der Adler ist ein Mitglied der zwei Brigaden
+        </h5>
+        <h5>   
+            Volk - Rang 02
+            Der Wolf ist ein Mitglied der zwei Brigaden
+        </h5>
+        <h5>   
+            Rys - Rang 01
+            Der Luchs ist ein Mitglied der zwei Brigaden
+        </h5>
+        <h5>  
+            Shestyorka - Rang 00
+            Laufbursche
+        </h5>
+        <h5>
+
+        </h5>
+      </div>
+
+    </center>
+  </div>
+
+  <script>
+    setInterval(function() {
+      const date = new Date();
+      document.getElementById('time').innerText = date.toLocaleTimeString();
+      document.getElementById('day').innerText = date.toLocaleDateString('en-US', { weekday: 'long' });
+      document.getElementById('date').innerText = date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    }, 1000);
+
+    document.onkeydown = function(e) {
+      if(e.keyCode == 123) {
+        return false;
+      }
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+        return false;
+      }
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+        return false;
+      }
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+        return false;
+      }
+      if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+        return false;
+      }
+    }
+
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+    function home() {
+      window.location.replace("index.html");
+    }
+  </script>
+</body>
+</html>

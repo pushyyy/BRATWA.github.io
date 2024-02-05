@@ -1,0 +1,94 @@
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>B R A T W A</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  
+  <link href="favicon.ico" rel="icon" type="image/ico"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href="css/animate.css" rel="stylesheet"/>
+  <link href="css/YTPlayer.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="js/title.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/marquee.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script><script src="inc/jquery.mb.YTPlayer.js"></script>
+</head>
+<body>
+  <div class="center">
+    <center>
+      <h1 style="font-size: 3rem;">Z I E L E</h1>
+      <h2 id="time">00:00:00</h2>
+      <h3 id="day">Monday</h3>
+      <h3 id="date">Febuary 5, 2024</h3>
+    </center>
+
+
+    <center class="animated fadeInLeft">
+      <img src="x.png" style="width: 10rem;" draggable="false">
+      <br><br>
+      <div style="max-width: 75rem; font-size: 1.25rem;" onclick="home()">
+        <h5>
+            Jede Familie hat auch irgendwelche Ziele im Blick, denn ein Mensch ohne ein Ziel hat keine Zukunft vor seinen Augen. 
+            Anders als manch andere Familien/Gangs haben wir unsere eigenen Ziele, welche wir auch strengstens nachverfolgen möchten.
+            Eines unserer Ziele wird es sein, unsere Wirtschaft sehr im Auge zu behalten, wir wollen nicht zu viel aber auch nicht zu wenig, 
+            denn wir müssen auch weiterhin darauf acht geben, wie wir unsere Geschäfte fortführen, denn ohne eine Gute Wirtschaft kann eine Familie nicht Gesund leben und damit wird das Geschäft geschädigt.    
+        </h5>
+        <h5>
+            Zudem wollen wir strengstens darauf achten, dass sich jeder versteht in den eigenen reihen,
+            jede Person Lebt nur einmal und will auch nur seinen Spaß haben, daher ist es auch Gut wie unsere Leaderschaft aufgebaut ist.
+            Wir haben strenge Leader aber auch welche die Spaß verstehen, denn natürlich sollte man immer seinen Spaß haben
+            aber wenn es darauf ankommt ernst zu sein wird auch jeder darauf hören und machen was die Leaderschaft sagt klar auf den ersten Eindruck wird man sich denken 
+            wenn man unsere Namen liest wer ist das überhaupt?
+        </h5>
+        <h5>
+            Aber unsere Leaderschaft haben wir mit bedacht ausgewählt und auch einen strengen augenmerkmal darauf gelegt, dass es kein einmaliges Ding wird unser Ziel ist,
+            es diese Familie solange wie möglich auf den Beinen zu halten, was auch der fall sein wird und das können wir euch mit voller überzeugen sagen, 
+            da wir keine Leute haben, die keine Ahnung haben von dem was sie repräsentieren.
+        </h5>
+        <h5>
+        </h5>
+        <h5>
+
+        </h5>
+      </div>
+
+    </center>
+  </div>
+
+  <script>
+    setInterval(function() {
+      const date = new Date();
+      document.getElementById('time').innerText = date.toLocaleTimeString();
+      document.getElementById('day').innerText = date.toLocaleDateString('en-US', { weekday: 'long' });
+      document.getElementById('date').innerText = date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    }, 1000);
+
+    document.onkeydown = function(e) {
+      if(e.keyCode == 123) {
+        return false;
+      }
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+        return false;
+      }
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+        return false;
+      }
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+        return false;
+      }
+      if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+        return false;
+      }
+    }
+
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+    function home() {
+      window.location.replace("index.html");
+    }
+  </script>
+</body>
+</html>
